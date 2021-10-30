@@ -1,0 +1,77 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+body {
+  background-color: #FF3CAC;
+  background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+body,
+div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.8;
+  background-color: indigo;
+}
+/* 3 div buttons */
+.button {
+  border: 3px solid lightseagreen;
+  background-color: mediumturquoise;
+  color: black;
+  border-radius: 10px;
+  padding: 10px;
+}
+.button:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px 3px mediumturquoise;
+}
+/* modal window */
+.modal_window {
+  padding: 10px;
+  position: absolute;
+  width: 400px;
+  border: 3px solid lightseagreen;
+  background-color: mediumturquoise;
+  border-radius: 5px;
+
+}
+.modal_window:hover {
+  box-shadow: 3px 3px 3px mediumturquoise;
+}
+.hidden {
+  display: none;
+}
+.close {
+  font-family: monospace;
+  position: absolute;
+  top: 7px;
+  right: 20px;
+  font-size: 1.5em;
+  font-weight: 900;
+  display: block;
+  color: red;
+}
+.close:hover {
+  cursor: pointer;
+  color: yellow;
+  filter: drop-shadow(1px 1px 1px black);
+}
+.content {
+  margin-top: 30px;
+}
